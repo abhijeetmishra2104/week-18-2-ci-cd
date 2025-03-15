@@ -18,6 +18,8 @@ jobs:
                   node-version: '14'
             - name: install dependencies
               run: npm install
+            - name: prisma generate
+              run: npm run db:generate
             - name: build
               run: npm run build
 
